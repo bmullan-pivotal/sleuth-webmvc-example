@@ -17,7 +17,11 @@ public class Frontend {
   @Autowired RestTemplate restTemplate;
 
   @RequestMapping("/") public String callBackend() {
-    return restTemplate.getForObject("http://localhost:9000/api", String.class);
+    // return restTemplate.getForObject("http://localhost:9000/api", String.class);
+    System.out.println("Frontend Called!");
+    String s = restTemplate.getForObject("http://localhost:8082/api", String.class);
+    System.out.println("Returned from Intermediate:"+s);
+    return s;
   }
 
   @Bean RestTemplate restTemplate() {
