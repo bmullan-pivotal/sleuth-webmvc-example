@@ -36,6 +36,10 @@ curl -sSL https://zipkin.io/quickstart.sh | bash -s
 java -jar zipkin.jar
 ```
 
+
+![alt text]()
+
+
 ## Configuration tips
 * The service name in the Zipkin UI defaults to the application name
   * `spring.application.name=frontend`
