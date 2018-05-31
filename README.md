@@ -37,7 +37,7 @@ java -jar zipkin.jar
 ```
 
 
-![alt text]()
+![alt text](https://github.com/bmullan-pivotal/sleuth-webmvc-example/raw/master/screen-shot.png)
 
 
 ## Configuration tips
